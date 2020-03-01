@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title><%= siteData.name %></title>
+</head>
+
+<body class="w3-center">
+  <h1 class="w3-jumbo"><%= siteData.name %></h1>
+  <h1 class="w3-xlarge">Easy & Simple Short URLs</h1>
+  <br>
+  <div>
+    <h1 class="w3-xlarge">Short Code: <a class="w3-tag w3-round" href="<%= shortData.short_url %>"><%= shortData.slug %></a></h1>
+    <h1 class="w3-xlarge">Short URL: <a href="<%= shortData.short_url %>"><%= shortData.shortDomain %>/<%= shortData.slug %></a></h1>
+    <h1 class="w3-xlarge">Long URL: <a href="<%= shortData.full_url %>"><%= shortData.full_url %></a></h1>
+    <h1 class="w3-xlarge">Time Created: <%= shortData.date_created %></h1>
+    <h1 class="w3-xxlarge">Number of Clicks: <a class="w3-tag w3-round w3-green"><%= shortData.clicks %></a></h1>
+  </div>
+  <br>
+  <button class="w3-button w3-round w3-green w3-xlarge" onclick="window.location = '/'">Create Another Short Link</button>
+</body>
+
+</html>

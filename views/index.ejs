@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title><%= siteData.name %></title>
+</head>
+
+<body class="w3-center">
+  <h1 class="w3-jumbo"><%= siteData.name %></h1>
+  <h1 class="w3-xlarge">Easy & Simple Short URLs</h1>
+  <div class="w3-padding">
+    <div class="w3-card w3-white w3-round w3-padding-16 w3-padding w3-display-middle w3-half">
+      <form action="/shorten" method="post">
+        <input class="w3-input w3-center w3-xlarge" type="url" name="fullUrl" id="fullUrl" placeholder="URL to Shorten...">
+        <br>
+        <button class="w3-button w3-green w3-round w3-xlarge" type="submit">Shorten</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
