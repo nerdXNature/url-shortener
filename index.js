@@ -21,7 +21,7 @@ app.listen(process.env.PORT || 5000, () => {
 });
 
 // Getting config variables from Heroku
-const dbUrl = process.env.DATABASE;
+const dbUrl = process.env.DATABASE_URL;
 const shortDomain = process.env.SHORT_DOMAIN;
 const name = process.env.NAME;
 let ssl = process.env.SSL || "TRUE";
