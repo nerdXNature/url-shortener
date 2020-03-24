@@ -4,6 +4,8 @@ I made this URL shortener for a few reasons
 
  1. I wanted to work on a quick side-project
  2. I wanted to make a URL shortener template that anyone could use and is free.
+ 
+ You can see a live demo @ https://myshort.tk
 
 ## Getting Started
 
